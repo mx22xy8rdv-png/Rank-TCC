@@ -7,8 +7,8 @@ local EXIT_POSITION = Vector3.new(0, 5, 150) -- УКАЖИ КООРДИНАТЫ 
 local npcs = {}
 
 -- Лица (Decals) - СЮДА ВСТАВЬ СВОИ ID
-local FACE_NORMAL = "rbxassetid://1234567" 
-local FACE_CRYING = "rbxassetid://7654321" 
+local FACE_NORMAL = "rbxassetid://86487700" 
+local FACE_CRYING = "rbxassetid://70504322718460" 
 
 local function spawnNPC(index)
     local model = Instance.new("Model")
