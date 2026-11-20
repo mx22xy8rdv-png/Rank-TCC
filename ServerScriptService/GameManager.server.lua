@@ -6,9 +6,9 @@ local NPC_COUNT = 100
 local EXIT_POSITION = Vector3.new(0, 5, 150) -- УКАЖИ КООРДИНАТЫ ВЫХОДА
 local npcs = {}
 
--- Лица (Decals)
-local FACE_NORMAL = "rbxassetid://1234567" -- Сюда вставь ID обычного лица
-local FACE_CRYING = "rbxassetid://7654321" -- Сюда вставь ID плачущего лица
+-- Лица (Decals) - СЮДА ВСТАВЬ СВОИ ID
+local FACE_NORMAL = "rbxassetid://1234567" 
+local FACE_CRYING = "rbxassetid://7654321" 
 
 local function spawnNPC(index)
     local model = Instance.new("Model")
@@ -24,7 +24,7 @@ local function spawnNPC(index)
     local torso = Instance.new("Part")
     torso.Name = "Torso"
     torso.Size = Vector3.new(2, 2, 1)
-    torso.Color = Color3.fromRGB(math.random(50, 200), math.random(50, 200), math.random(50, 200)) -- Рандомная одежда
+    torso.Color = Color3.fromRGB(math.random(50, 200), math.random(50, 200), math.random(50, 200)) 
     torso.Parent = model
 
     local head = Instance.new("Part")
@@ -136,7 +136,6 @@ local function spawnNPC(index)
     end)
 end
 
--- Создаем RemoteEvent для сигнала паники
 local panicEvent = Instance.new("RemoteEvent")
 panicEvent.Name = "PanicEvent"
 panicEvent.Parent = RS
